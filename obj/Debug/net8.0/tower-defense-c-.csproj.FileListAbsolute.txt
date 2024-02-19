@@ -1,0 +1,15 @@
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/bin/Debug/net8.0/tower-defense-c-
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/bin/Debug/net8.0/tower-defense-c-.deps.json
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/bin/Debug/net8.0/tower-defense-c-.runtimeconfig.json
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/bin/Debug/net8.0/tower-defense-c-.dll
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/bin/Debug/net8.0/tower-defense-c-.pdb
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/obj/Debug/net8.0/tower-defense-c-.GeneratedMSBuildEditorConfig.editorconfig
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/obj/Debug/net8.0/tower-defense-c-.AssemblyInfoInputs.cache
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/obj/Debug/net8.0/tower-defense-c-.AssemblyInfo.cs
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/obj/Debug/net8.0/tower-defense-c-.csproj.CoreCompileInputs.cache
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/obj/Debug/net8.0/tower-defense-c-.sourcelink.json
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/obj/Debug/net8.0/tower-defense-c-.dll
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/obj/Debug/net8.0/refint/tower-defense-c-.dll
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/obj/Debug/net8.0/tower-defense-c-.pdb
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/obj/Debug/net8.0/tower-defense-c-.genruntimeconfig.cache
+/Users/paigehand/allCode/Developer/projects/tower-defense-c-/obj/Debug/net8.0/ref/tower-defense-c-.dll
