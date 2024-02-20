@@ -1,11 +1,17 @@
-using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 
 namespace TowerDefenseGame
 {
     class Point 
     {
-        public int X; 
-        public int Y;
+        public readonly int X; 
+        public readonly int Y;
+        
+
+        public Point(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
     } 
 }
