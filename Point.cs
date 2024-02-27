@@ -17,5 +17,10 @@ namespace TowerDefenseGame
         {
             return (int)Math.Sqrt(Math.Pow(X-x, 2) * Math.Pow(Y-y, 2) );
         }
+
+        public int DistanceBetween(Point point)
+        {
+            return DistanceBetween(point.X, point.Y);
+        }
     } 
 }
