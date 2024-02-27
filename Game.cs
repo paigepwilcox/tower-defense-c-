@@ -10,20 +10,39 @@ namespace TowerDefenseGame
             Map map = new Map(8, 5);
             try
             {
-            MapLocation mapLocation = new MapLocation(20, 20, map);
-            }
-            catch(OutOfBoundsException)
-            {
+                Path path = new Path(
+                    new [] {
+                        // passing in map to verify points
+                        new MapLocation(0, 2, map),
+                        new MapLocation(1, 2, map),
+                        new MapLocation(2, 2, map),
+                        new MapLocation(3, 2, map),
+                        new MapLocation(4, 2, map),
+                        new MapLocation(5, 2, map),
+                        new MapLocation(6, 2, map),
+                        new MapLocation(7, 2, map),
+                    }
+                );
+                MapLocation location = path.GetLocationAt(0);
 
+                //null check
+                if(location != null)
+                {
+                    Console.WriteLine(location.X + "," + location.Y);
+                }
             }
-            catch(TowerDefenseException)
+            catch(OutOfBoundsException ex)
             {
-                
+                Console.WriteLine(ex.Message);
+            }
+            catch(TowerDefenseException ex)
+            {
+                Console.WriteLine("Unhandled towerdefense exception ", ex.Message);
             }
             catch(Exception ex)
             {
                 // throw new System.Exception(ex.Message);
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("Unhandled Exception: ", ex.Message);
             }
 
 
