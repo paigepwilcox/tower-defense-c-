@@ -17,5 +17,19 @@ namespace TowerDefenseGame
             _location = value;
         }
 
+        // writing properites
+        public MapLocation Location
+        {
+            get
+            {
+                return _location;
+            }
+            set
+            {
+                //value param is implied
+                _location = value;
+            }
+        }
+
     }
 }
