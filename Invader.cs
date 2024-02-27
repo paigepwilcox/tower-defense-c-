@@ -9,6 +9,9 @@ namespace TowerDefenseGame
         // writing properites
         // computed property - a property that does not wrap an actual field
         public MapLocation Location => _path.GetLocationAt(_pathStep);
+
+        // private set to let coders know to use the method
+        public int Health { get; private set; } = 2;
         
         // constructor makes sure our fields are not null
         public Invader(Path path)
@@ -18,6 +21,11 @@ namespace TowerDefenseGame
 
         // to advance to invader
         public void Move() => _pathStep += 1;
+
+        public void DecreaseHealth(int factor) 
+        {
+            Health -= factor;
+        }
 
     }
 }
