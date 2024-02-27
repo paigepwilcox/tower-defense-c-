@@ -23,13 +23,14 @@ namespace TowerDefenseGame
                         new MapLocation(7, 2, map),
                     }
                 );
-                MapLocation location = path.GetLocationAt(0);
 
-                //null check
-                if(location != null)
-                {
-                    Console.WriteLine(location.X + "," + location.Y);
-                }
+                Invader invader = new Invader();
+                MapLocation location = new MapLocation(0,0, map);
+
+                // using method
+                invader.SetLocation(location);
+                // using property
+                invader.Location = location;
             }
             catch(OutOfBoundsException ex)
             {
