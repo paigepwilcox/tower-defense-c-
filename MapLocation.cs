@@ -10,5 +10,10 @@ namespace TowerDefenseGame
                 throw new OutOfBoundsException(x + y + "outside of the boundaries");
             }
         }
+
+        public bool InRangeOf(MapLocation location, int range)
+        {
+            return DistanceBetween(location) <= range;
+        }
     }
 }
