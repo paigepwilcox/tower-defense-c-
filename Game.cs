@@ -24,13 +24,36 @@ namespace TowerDefenseGame
                     }
                 );
 
-                Invader invader = new Invader();
+                Invader[] invaders = 
+                {
+                    new Invader(path),
+                    new Invader(path),
+                    new Invader(path),
+                    new Invader(path)
+                };
+
+
+                Tower[] towers = 
+                {
+                    new Tower(new MapLocation(1,3, map)),
+                    new Tower(new MapLocation(3,3, map)),
+                    new Tower(new MapLocation(5,3, map)),
+                };
+
+                Level level = new Level(invaders)
+                {
+                    // we can only do this with properties, notice there is no semicolon, set on construction
+                    Towers = towers
+                };
+
+                bool playerWon = level.Play();
+
+                Console.WriteLine("player " + (playerWon? "Wone!": "lost"));
+
                 MapLocation location = new MapLocation(0,0, map);
 
-                // using method
-                invader.SetLocation(location);
                 // using property
-                invader.Location = location;
+                // invader.Location = location;
             }
             catch(OutOfBoundsException ex)
             {
