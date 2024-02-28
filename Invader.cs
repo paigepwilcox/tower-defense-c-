@@ -11,13 +11,13 @@ namespace TowerDefenseGame
         public MapLocation Location => _path.GetLocationAt(_pathStep);
 
         // private set to let coders know to use the method
-        public int Health { get; private set; } = 2;
+        public int Health { get; private set; } = 10;
         public bool IsNeutralized => Health <= 0;
 
         public bool IsActive => !(IsNeutralized || HasScored);
 
         // see if the invader has scored by using the Path and _pathstep fields
-        public bool HasScored { get { return _pathStep >- _path.Length; } }
+        public bool HasScored { get { return _pathStep >= _path.Length; } }
         
         // constructor makes sure our fields are not null
         public Invader(Path path)
